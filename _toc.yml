@@ -8,36 +8,17 @@ parts:
   - caption: First examples
     numbered: True
     chapters:
-    - file: wta/elasticity3D.ipynb
-    - file: wta/coil.ipynb
-      sections:
-      - file: transformer/transformer.ipynb
-        title: Transformers      
-    - file: wta/elasticity.ipynb    
-    - file: wta/shell.ipynb
-      title: Shells
-      sections:
-      - file: wta/Sydney.ipynb
+    - file: examples/Laplace_DtN_indirect.ipynb
+    - file: examples/Laplace_DtN_direct.ipynb
+    - file: examples/fembem.ipynb
+    - file: examples/BrakhageWerner.ipynb
 
-  - caption: Flow Problems
+  - caption: First examples
     numbered: True
     chapters:
-    - file: wta/tesla.ipynb
-    - file: modeltemplates/NavierStokesMT.ipynb
-      sections:    
-      - file: modeltemplates/natconv.ipynb
-    - file: notebooks/morphing.ipynb
-    - file: notebooks/parallelstokes.ipynb        
+    - file: multipole/intro_fmm.ipynb
+    - file: multipole/basisfunctions.ipynb    
+    - file: multipole/BiotSavart.ipynb    
 
-  - caption: Recent development
-    numbered: True
-    chapters:
-    - file: recent/solverlayers.ipynb
-    - file: recent/wave_cuda.ipynb
-    - file: notebooks/Curvature.ipynb
-    - file: recent/matrixvalued.ipynb
-      title: Matrix-valued FE
-    - file: mycpp/myhighorder.ipynb
-    - file: recent/WebApp.ipynb    
 
 
