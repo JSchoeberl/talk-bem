@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -354,6 +354,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#starting-point">Starting Point</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-first-examples">Some first examples:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fast-multipole-methods">Fast Multipole Methods</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-on-maxwell">Examples on Maxwell:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-like-hear-more-from-you">I like hear more from you</a></li>
 </ul>
             </nav>
@@ -379,17 +380,13 @@ TU Wien</p>
 <p>This presentation uses the open-source finite element library NGSolve (<a class="reference external" href="http://www.ngsolve.org">www.ngsolve.org</a>) within Jupyter Notebooks.</p>
 <a class="reference internal image-reference" href="_images/NGSlogo.png"><img alt="_images/NGSlogo.png" class="align-center" src="_images/NGSlogo.png" style="width: 100px;" />
 </a>
-<p>The talk is available online from
-<a class="reference external" href="https://jschoeberl.github.io/talk-bem">https://jschoeberl.github.io/talk-bem</a></p>
-<a class="reference internal image-reference" href="pictures/talk-pdesoft-QR.png"><img alt="pictures/talk-pdesoft-QR.png" class="align-center" src="pictures/talk-pdesoft-QR.png" style="width: 0px;" />
-</a>
 <section id="starting-point">
 <h2>Starting Point<a class="headerlink" href="#starting-point" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>NGSolve is a high order open source finite element package</p></li>
-<li><p>Lucy Weggler has developed high order BEM for Maxwell in her Phd</p></li>
+<li><p>Lucy Weggler has developed high order BEM for Maxwell in her Dissertation</p></li>
 <li><p>After two weeks joint effort we had a high order BEM package ngbem as NGSolve addon</p></li>
-<li><p>Now, BEM matrix setup and FMM acceleartion is included into the NGSolve core library</p></li>
+<li><p>Now, BEM matrix setup and FMM acceleration is included into the NGSolve library</p></li>
 </ul>
 </section>
 <section id="some-first-examples">
@@ -400,6 +397,10 @@ TU Wien</p>
 <li><p><a class="reference internal" href="examples/BrakhageWerner.html"><span class="std std-doc">Helmholtz scattering</span></a></p></li>
 </ul>
 <p>If you like to try out this talk on your computer:</p>
+<p>The talk is available online from
+<a class="reference external" href="https://jschoeberl.github.io/talk-bem">https://jschoeberl.github.io/talk-bem</a></p>
+<a class="reference internal image-reference" href="pictures/talk-pdesoft-QR.png"><img alt="pictures/talk-pdesoft-QR.png" class="align-center" src="pictures/talk-pdesoft-QR.png" style="width: 0px;" />
+</a>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>python3 -m pip install numpy scipy matplotlib ipywidgets jupyter notebook 
 python3 -m pip install --upgrade --pre ngsolve webgui_jupyter_widgets
 </pre></div>
@@ -423,10 +424,15 @@ python3 -m pip install --upgrade --pre ngsolve webgui_jupyter_widgets
 <li><p><a class="reference internal" href="multipole/BiotSavart.html"><span class="std std-doc">Biot-Savart</span></a></p></li>
 </ul>
 </section>
+<section id="examples-on-maxwell">
+<h2>Examples on Maxwell:<a class="headerlink" href="#examples-on-maxwell" title="Link to this heading">#</a></h2>
+<p>From the new
+<a class="reference external" href="https://weggler.github.io/docu-ngsbem/demos/Maxwell_DtN_indirect.html#">ngsbem documentation</a></p>
+</section>
 <section id="i-like-hear-more-from-you">
 <h2>I like hear more from you<a class="headerlink" href="#i-like-hear-more-from-you" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>What are the needs for a general purpose BEM - package</p></li>
+<li><p>What are your needs for a general purpose BEM - package</p></li>
 <li><p>Preconditioning</p></li>
 <li><p>Nearfield evaluation</p></li>
 </ul>
@@ -495,6 +501,7 @@ python3 -m pip install --upgrade --pre ngsolve webgui_jupyter_widgets
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#starting-point">Starting Point</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-first-examples">Some first examples:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fast-multipole-methods">Fast Multipole Methods</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-on-maxwell">Examples on Maxwell:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-like-hear-more-from-you">I like hear more from you</a></li>
 </ul>
   </nav></div>
